@@ -1,6 +1,6 @@
 # JRubyFXML
 
-A collection of snippets, completions and utilities for working with JRubyFX/FXML.
+A collection of snippets, completions and utilities for working with [JRubyFX](https://github.com/nahi/jrubyfx)/FXML (a Ruby DSL for working with JavaFX).
 
 
 ## The Problem
