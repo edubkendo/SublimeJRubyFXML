@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+load_fxml("$1", ${2:stage}, ${3::width} => ${4:620},
+  ${5::height} => ${6:400}, ${7::fill} => Color::$8, ${9::initialize => ["Arguments", "are supported"]})
+]]></content>
+  <tabTrigger>load_fxml</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

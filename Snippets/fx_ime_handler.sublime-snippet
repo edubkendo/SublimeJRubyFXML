@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_ime_handler ${1::InputMethodEvent} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_ime_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

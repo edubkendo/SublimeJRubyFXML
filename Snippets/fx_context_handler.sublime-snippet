@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_context_handler ${1::cmenu} do
+  $0
+end
+]]></content>
+  <tabTrigger>fx_context_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

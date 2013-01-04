@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_generic_handler ${1::Event} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_generic_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

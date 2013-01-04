@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_window_handler ${1::WindowEvent} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_window_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

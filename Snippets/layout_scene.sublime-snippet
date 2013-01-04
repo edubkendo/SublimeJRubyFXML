@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+layout_scene()  do
+  $1
+end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>layout_scene</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>

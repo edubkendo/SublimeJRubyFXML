@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_mouse_handler ${1::mouseEvent} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_mouse_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

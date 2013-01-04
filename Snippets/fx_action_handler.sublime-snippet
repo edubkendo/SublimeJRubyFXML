@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_action_handler ${1::click} do
+  $0
+end
+]]></content>
+  <tabTrigger>fx_action_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

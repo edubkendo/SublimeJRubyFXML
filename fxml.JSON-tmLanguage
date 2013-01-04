@@ -1,0 +1,52 @@
+{ "name": "FXML",
+  "scopeName": "source.fxml",
+  "fileTypes": ["fxml"],
+  "patterns": [
+        { "match": "(<\\?)\\s*(import)\\s+([^ ;$]+;?)(\\?>)",
+          "name": "meta.import.fxml",
+          "captures": {
+              "1": { "name": "meta.tag.fxml" },
+              "2": { "name": "keyword.other.import.fxml" },
+              "3": { "name": "storage.modifier.import.fxml" },
+              "4": { "name": "meta.tag.fxml" }
+           },
+          "comment": "import statements"
+        },
+        {  "name": "meta.tag.preprocessor.fxml",
+           "match": "<\\?.*\\?>"
+        },
+        {  "name": "entity.name.type.class.fxml",
+           "match": "[A-Z]\\w*"
+        },
+        { "name": "punctuation.definition.comment.fxml",
+          "begin": "<[!%]--",
+          "end": "--?>"
+        },
+        {  "name": "string.quoted.double.fxml",
+           "match": "\"([^\\\"\n]|\\.)*\""
+        },
+        { "match": "<\/",
+          "name": "meta.tag.fxml",
+          "comment": "tag"
+        },
+        { "match": "<",
+          "name": "meta.tag.fxml",
+          "comment": "tag"
+        },
+        { "match": ">",
+          "name": "meta.tag.fxml",
+          "comment": "tag"
+        },
+        { "match": "\/>",
+          "name": "meta.tag.fxml",
+          "comment": "tag"
+        },
+        {  "name": "variable.assignment.fxml",
+           "match": "\\w+="
+        },
+        {  "name": "entity.name.tag.namespace.fxml",
+           "match": "\\w*"
+        }
+  ],
+  "uuid": "f412ce83-ba1f-4730-a5a4-8f5e73115777"
+}

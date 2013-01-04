@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_drag_handler ${1::dragEvent} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_drag_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

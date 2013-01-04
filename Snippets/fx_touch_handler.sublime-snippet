@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fx_touch_handler ${1::touchEvent} do |${2:e}|
+  $0
+end
+]]></content>
+  <tabTrigger>fx_touch_handler</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>
