@@ -25,7 +25,7 @@ Create a folder with your projects name and cd into it, open sublime text from t
 For more information on working with JRubyFX and the fx-generator, see [JRubyFX: Getting Started](https://github.com/byteit101/JRubyFXML/blob/master/Getting%20Started.md).
 
 ### Generate FXML templates
-  Use `ctrl-shift-p` to open up the Command Palette. Select "Create FXML Template". Next, select the root element for the FXML you would like to generate. If you're unsure, use "AnchorPane".
+  Use `ctrl-shift-p` to open up the Command Palette. Select "Create FXML Template". Next, select the root element for the FXML you would like to generate. If you're unsure, use "AnchorPane". Select the directory you'd like the file placed in(within the current project), and when prompted select a name for the fxml file (.fxml will be appended for you).
 
 ## TODO
 
