@@ -5,18 +5,14 @@ A collection of snippets, completions and utilities for working with JRubyFX/FXM
 
 ## The Problem
 
-FXML didn't have syntax highlighting in sublime text. None of the current code completion solutions work properly with the JRubyFX gem (ie. [SublimeCodeIntel](https://github.com/Kronuz/SublimeCodeIntel) )
+FXML didn't have syntax highlighting in Sublime Text. None of the current code completion solutions work properly with the JRubyFX gem (ie. [SublimeCodeIntel](https://github.com/Kronuz/SublimeCodeIntel) )
 
 
 ## Getting Started
 
-- Install JRubyFX
+Install via [Package Manager](http://wbond.net/sublime_packages/package_control) or simply clone into your packages directory:
 
-    JRubyFX: https://github.com/nahi/jrubyfx
-
-- Install via [Package Manager](http://wbond.net/sublime_packages/package_control) or simply clone into your packages directory:
-
-    $ cd ~/.config/sublime-text-2/Packages/
+    $ cd ~/.config/sublime-text-2/Packages
     $ git clone https://github.com/edubkendo/SublimeJRubyFXML.git
 
 
