@@ -1,0 +1,6 @@
+[
+    {
+        "caption": "Create FXML Template",
+        "command": "create_fxml_template"
+    }
+]
