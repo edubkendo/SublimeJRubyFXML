@@ -1,4 +1,0 @@
-{
-  "cmd": ["rubyfx-generator", "$file", "${file_base_name}.rb", "$project_name"],
-  "selector": "text.fxml"
-}
