@@ -2,7 +2,7 @@
     "scope": "entity.other.inherited-class.ruby",
 
     "completions": [
-        { "trigger": "FXApplication", "contents": "FXApplication" },
-        { "trigger": "FXController", "contents": "FXController" }
+        { "trigger": "JRubyFX::Application", "contents": "JRubyFX::Application" },
+        { "trigger": "JRubyFX::Controller", "contents": "JRubyFX::Controller" }
     ]
 }
