@@ -36,6 +36,8 @@ For more information on working with JRubyFX and the fx-generator, see [JRubyFX:
 ### Build Executable Jar and Native Bundle/Installer
 Ensure all your code is in the `src` folder, that your currently editing your "main" ruby script and select Tools/Build System/JRubyFX. Now press `ctrl-b` and JRubyFX's amazing build tools will construct an executable jar in your `dist` folder, and the appropriate native installer and bundle (based on your current OS and currently installed third-party-tools-- [see here for details](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm#A1324980) ) in the `build` folder.
 
+This will probably work best if you generate your project using the plugin, because that sets up the appropriate folder structure and ensures you have a sublime-project file. For more information on using the build tool, or to customize your apps icons, etc. Please see the [JRubyFX README](https://github.com/nahi/jrubyfx/blob/master/README.md) and this article in the JRuby wiki: [Packaging Native Installers with the JavaFX Ant Tasks](https://github.com/jruby/jruby/wiki/Packaging-Native-Installers-with-the-JavaFX-Ant-Tasks), as well as the [Official Oracle Documentation](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm)
+
 ## TODO
 
 - Commands for running and building project
