@@ -33,6 +33,9 @@ For more information on working with JRubyFX and the fx-generator, see [JRubyFX:
 ### Generate FXML templates
   Use `ctrl-shift-p` to open up the Command Palette. Select "Create FXML Template". Next, select the root element for the FXML you would like to generate. If you're unsure, use "AnchorPane". Select the directory you'd like the file placed in(within the current project), and when prompted select a name for the fxml file (.fxml will be appended for you). If the FXML file doesn't show up in the sidebar immediately after generation, just refresh the sidebar.
 
+### Build Executable Jar and Native Bundle/Installer
+Ensure all your code is in the `src` folder, that your currently editing your "main" ruby script and select Tools/Build System/JRubyFX. Now press `ctrl-b` and JRubyFX's amazing build tools will construct an executable jar in your `dist` folder, and the appropriate native installer and bundle (based on your current OS and currently installed third-party-tools-- [see here for details](http://docs.oracle.com/javafx/2/deployment/self-contained-packaging.htm#A1324980) ) in the `build` folder.
+
 ## TODO
 
 - Commands for running and building project

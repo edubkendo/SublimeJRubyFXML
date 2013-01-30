@@ -162,12 +162,14 @@ class CreateJrubyfxProjectCommand(sublime_plugin.WindowCommand):
             os.mkdir(full_path + os.sep + "src")
             os.mkdir(full_path + os.sep + "dist")
             os.mkdir(full_path + os.sep + "build")
-            self.create_project_file(dir_name, full_path)
-            self.remove_window_folders()
-            sublime_command_line(['-a', full_path])
+            file_name = dir_name + ".sublime-project"
+            self.create_project_file(file_name, full_path)
+            # self.remove_window_folders()
+            project_file_loc = os.path.join(full_path, file_name)
+            sublime_command_line(['-a', project_file_loc])
 
-    def create_project_file(self, project_name, full_path):
-        file_name = project_name + ".sublime-project"
+    def create_project_file(self, file_name, full_path):
+
         string_full_path = str(full_path)
         prj_file_contents = ("{\n"
                             "    \"folders\":\n"
