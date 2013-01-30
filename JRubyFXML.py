@@ -161,6 +161,10 @@ class CreateJrubyfxProjectCommand(sublime_plugin.WindowCommand):
             os.mkdir(full_path)
             os.mkdir(full_path + os.sep + "src")
             os.mkdir(full_path + os.sep + "dist")
+            os.mkdir(full_path + os.sep + "package")
+            os.mkdir(full_path + os.sep + "package" + os.sep + "linux")
+            os.mkdir(full_path + os.sep + "package" + os.sep + "macosx")
+            os.mkdir(full_path + os.sep + "package" + os.sep + "windows")
             os.mkdir(full_path + os.sep + "build")
             file_name = dir_name + ".sublime-project"
             self.create_project_file(file_name, full_path)
