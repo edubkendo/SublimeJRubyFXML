@@ -42,7 +42,6 @@ This will probably work best if you generate your project using the plugin, beca
 
 ## TODO
 
-- Commands for running and building project
 - Open FXML with SceneBuilder
 - Do something with the awesome GUI REPL, scratchpad.rb.
 - More completions for DSL
