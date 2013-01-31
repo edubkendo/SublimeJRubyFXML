@@ -426,7 +426,7 @@ class BuildAndDeployCommand(sublime_plugin.WindowCommand):
 
         self.window.run_command("exec", {"cmd": cmd, "working_dir": working_dir})
 
-class WindowShowOverlayCommand(WindowCommand):
+class WindowShowOverlayCommand(sublime_plugin.WindowCommand):
     """Wrap show_overlay command because I can't call this from a build system.
     """
     def run(self, *args, **kwargs):
