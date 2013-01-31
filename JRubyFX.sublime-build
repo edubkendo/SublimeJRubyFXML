@@ -1,5 +1,26 @@
 {
-  "cmd": ["jrubyfx-jarify", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar", "--native", "--name", "$project_base_name", "-v"],
-  "selector": "source.ruby",
-  "working_dir": "$project_path"
+    "target": "window_show_overlay",
+    "overlay": "command_palette",
+    "text": "Build: ",
+
+    "selector": "source.ruby",
+
+    "variants": [
+        {
+            "name": "JRubyFX Executable Jar",
+
+              "cmd": ["jrubyfx-jarify", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar"],
+              "selector": "source.ruby",
+              "working_dir": "$project_path",
+              "target": "build_and_deploy"
+        },
+        {
+            "name": "JRubyFX Native Installer",
+
+              "cmd": ["jrubyfx-jarify", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar", "--native", "--name", "$project_base_name", "-v"],
+              "selector": "source.ruby",
+              "working_dir": "$project_path",
+              "target": "build_and_deploy"
+        }
+    ]
 }

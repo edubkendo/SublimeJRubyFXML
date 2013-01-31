@@ -416,3 +416,18 @@ def populate_file(view):
     global template
     view.run_command("insert_snippet", {'contents': template["content"]})
     view.window().run_command("refresh_folder_list")
+
+class BuildAndDeployCommand(sublime_plugin.WindowCommand):
+
+    def run(self, cmd = [], file_regex = "", line_regex = "", working_dir = "",
+            encoding = "utf-8", env = {}, quiet = False, kill = False,
+            # Catches "path" and "shell"
+            **kwargs):
+
+        self.window.run_command("exec", {"cmd": cmd, "working_dir": working_dir})
+
+class WindowShowOverlayCommand(WindowCommand):
+    """Wrap show_overlay command because I can't call this from a build system.
+    """
+    def run(self, *args, **kwargs):
+        self.window.run_command('show_overlay', kwargs)
