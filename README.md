@@ -43,6 +43,7 @@ This will probably work best if you generate your project using the plugin, beca
 ## TODO
 
 - Open FXML with SceneBuilder
+- Make the JRubyFX Build's more configurable (ie. let the user pick the directory, main script, output dir, etc)
 - Do something with the awesome GUI REPL, scratchpad.rb.
 - More completions for DSL
 - Syntax highlighting and eventually completions for FX-CSS
