@@ -7,12 +7,25 @@
 
     "variants": [
         {
+            "name": "JRubyFX Run App",
+
+              "cmd": ["jruby", "$file"],
+              "selector": "source.ruby",
+              "working_dir": "$project_path",
+              "target": "build_and_deploy"
+        },
+        {
             "name": "JRubyFX Executable Jar",
 
               "cmd": ["jrubyfx-jarify", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar"],
               "selector": "source.ruby",
               "working_dir": "$project_path",
-              "target": "build_and_deploy"
+              "target": "build_and_deploy",
+
+              "windows":
+              {
+                  "cmd": ["jrubyfx-jarify.bat", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar"]
+              }
         },
         {
             "name": "JRubyFX Native Installer",
@@ -20,7 +33,12 @@
               "cmd": ["jrubyfx-jarify", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar", "--native", "--name", "$project_base_name", "-v"],
               "selector": "source.ruby",
               "working_dir": "$project_path",
-              "target": "build_and_deploy"
+              "target": "build_and_deploy",
+
+              "windows":
+              {
+                  "cmd": ["jrubyfx-jarify.bat", "${project_path}/src", "--main", "$file", "dist/${project_base_name}.jar", "--native", "--name", "$project_base_name", "-v"]
+              }
         }
     ]
 }
