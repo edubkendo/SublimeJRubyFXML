@@ -174,7 +174,7 @@ class CreateJrubyfxProjectCommand(sublime_plugin.WindowCommand):
 
     def create_project_file(self, file_name, full_path):
 
-        string_full_path = str(full_path)
+        string_full_path = str(full_path).replace("\\","\\\\")
         prj_file_contents = ("{\n"
                             "    \"folders\":\n"
                             "    [\n"
@@ -198,6 +198,8 @@ def get_sublime_path():
         return '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'
     elif sublime.platform() == 'linux':
         return open('/proc/self/cmdline').read().split(chr(0))[0]
+    elif sublime.platform() == "windows":
+        return 'sublime_text.exe'
     else:
         return sys.executable
 
