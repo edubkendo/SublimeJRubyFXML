@@ -1,4 +1,9 @@
 {
   "cmd": ["jrubyfx-generator", "$file", "${file_base_name}.rb", "$project_base_name"],
-  "selector": "text.fxml"
+  "selector": "text.fxml",
+
+  "windows":
+  {
+      "cmd": ["jrubyfx-generator.bat", "$file", "${file_base_name}.rb", "$project_base_name"]
+  }
 }
